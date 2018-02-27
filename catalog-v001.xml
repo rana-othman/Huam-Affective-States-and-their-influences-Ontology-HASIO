@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://www.ontologydesignpatterns.org/cp/owl/classification.owl" uri="RoleAgent.owl"/>
+    <uri id="User Entered Import Resolution" name="http://a.com/ontology" uri="RoleAgent.owl"/>
+    <uri id="Imports Wizard Entry" name="http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl" uri="WNAffect.owl"/>
+    <uri id="Imports Wizard Entry" name="http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl" uri="file:/C:/Users/rabaa006/Desktop/WNAffect.owl"/>
+    <uri id="Imports Wizard Entry" name="http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl" uri="file:/C:/Users/rabaa006/Desktop/WNAffect.xml"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/heo" uri="HEO.owl"/>
+    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/porco/ontologies/2014/7/FHNOntology" uri="FHNOntology.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1519671906921" name="http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl" uri="WNAffect.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519671906921" name="http://purl.org/heo" uri="HEO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519671906921" name="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl" uri="RoleAgent.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519671906921" name="http://www.semanticweb.org/rabaa006/ontologies/2014/4/HASIO" uri="Huam%20Affective%20States%20Ontology%20and%20their%20influences(HASIO).owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519671906921" name="http://www.w3.org/2002/07/owl" uri="FHNOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519671906921" name="http://xmlns.com/foaf/0.1/" uri="FOAF.rdf"/>
+    </group>
+</catalog>
