@@ -109,6 +109,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 
 ###  http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Object
 :Object rdf:type owl:Class ;
+        owl:disjointWith :Role ;
         rdfs:comment "Any physical, social, or mental object, or a substance"^^xsd:string ;
         rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl> ;
         rdfs:label "Object"@en ,
