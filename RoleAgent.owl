@@ -171,6 +171,7 @@
     <!-- http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Object -->
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Object">
+    <owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any physical, social, or mental object, or a substance</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl"/>
         <rdfs:label xml:lang="en">Object</rdfs:label>
