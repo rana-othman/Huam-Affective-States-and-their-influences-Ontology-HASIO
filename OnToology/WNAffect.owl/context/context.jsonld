@@ -1,0 +1,13 @@
+{
+  "@context" : {
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "behaviour" : {
+      "@id" : "http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#behaviour"
+    },
+    "Mental-State" : {
+      "@id" : "http://imash.leeds.ac.uk/ontologies/WNAffect/WNAffect.owl#Mental-State"
+    }
+  }
+}

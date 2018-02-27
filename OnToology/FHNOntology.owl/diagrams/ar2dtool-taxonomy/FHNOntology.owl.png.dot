@@ -1,0 +1,53 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "FHNOntology:SynergesticSingularSatisfier" "FHNOntology:Identity" "FHNOntology2:EntityWithSatisfiers" "FHNOntology2:FreedomSub" "FHNOntology2:NeedsWithoutSatisfiers" "FHNOntology:Exercise" "FHNOntology:ProtectBelonging" "-af26463:161d7eeafdf:-7fdf" "FHNOntology:ProtectFamily" "FHNOntology:Destroyer" "FHNOntology2:IdenSub" "FHNOntology:Subsistence" "FHNOntology:OutdoorActivity" "FHNOntology2:RolesWithoutSatisfiers" "FHNOntology2:CreaSub" "FHNOntology:RigorousExercise" "FHNOntology2:PartSub" "FHNOntology2:RoleWithSatisfiers" "FHNOntology:Fitness" "FHNOntology:Protection" "-af26463:161d7eeafdf:-7ff2" "-af26463:161d7eeafdf:-7fd1" "FHNOntology:Fundamental_Need" "-af26463:161d7eeafdf:-7fc1" "FHNOntology:SpecializedFitness" "-af26463:161d7eeafdf:-7fc5" "FHNOntology2:EntityWithoutSatisfiers" "FHNOntology2:IdlenessSub" "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Role" "FHNOntology:UnderstandingAcademics" "FHNOntology:InhibitingSatisfier" "FHNOntology:Idleness" "FHNOntology:Creation" "FHNOntology:Being" "FHNOntology:UnderstandingNewCulture" "FHNOntology:Freedom" "-af26463:161d7eeafdf:-7fd5" "FHNOntology:Understanding" "FHNOntology:MentalHealth" "-af26463:161d7eeafdf:-7fe8" "FHNOntology:HealthyFood" "FHNOntology:Affection" "FHNOntology:Satisfier" "FHNOntology2:AgentWithSatisfiers" "FHNOntology:UnderstandingNewLanguage" "FHNOntology:HealthNeed" "FHNOntology2:NeedWithSatisfiers" "FHNOntology:PhysicalHealth" "FHNOntology:Doing" "FHNOntology:Interacting" "FHNOntology2:AffSub" "FHNOntology:ShelterNeed" "FHNOntology:CompetitorRole" "FHNOntology:Having" "FHNOntology:ProtectOneself" "FHNOntology:Sunlight" "FHNOntology:Food" "FHNOntology:Participation" "FHNOntology:ExtremelyHealthyFood" ; /*classes style*/
+	"FHNOntology:Interacting" -> "-af26463:161d7eeafdf:-7fc5" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:UnderstandingNewCulture" -> "FHNOntology:Understanding" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:PhysicalHealth" -> "FHNOntology:HealthNeed" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:Creation" -> "FHNOntology:Fundamental_Need" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:Exercise" -> "FHNOntology:SynergesticSingularSatisfier" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:Food" -> "FHNOntology:SynergesticSingularSatisfier" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:Affection" -> "FHNOntology:Fundamental_Need" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:Identity" -> "FHNOntology:Fundamental_Need" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:UnderstandingAcademics" -> "FHNOntology:Understanding" [ label = "rdfs:subClassOf" ];
+	"FHNOntology2:FreedomSub" -> "FHNOntology:Freedom" [ label = "rdfs:subClassOf" ];
+	"FHNOntology2:RolesWithoutSatisfiers" -> "FHNOntology2:EntityWithoutSatisfiers" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:InhibitingSatisfier" -> "FHNOntology:Satisfier" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:Being" -> "-af26463:161d7eeafdf:-7ff2" [ label = "rdfs:subClassOf" ];
+	"FHNOntology2:NeedWithSatisfiers" -> "FHNOntology2:EntityWithSatisfiers" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:Subsistence" -> "FHNOntology:Fundamental_Need" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:Participation" -> "FHNOntology:Fundamental_Need" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:Doing" -> "-af26463:161d7eeafdf:-7fe8" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:SpecializedFitness" -> "FHNOntology:Fitness" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:ShelterNeed" -> "FHNOntology:Subsistence" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:Understanding" -> "FHNOntology:Fundamental_Need" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:Fitness" -> "FHNOntology:PhysicalHealth" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:UnderstandingNewLanguage" -> "FHNOntology:Understanding" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:Destroyer" -> "FHNOntology:Satisfier" [ label = "rdfs:subClassOf" ];
+	"FHNOntology2:RoleWithSatisfiers" -> "FHNOntology2:EntityWithSatisfiers" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:CompetitorRole" -> "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Role" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:ProtectFamily" -> "FHNOntology:Protection" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:MentalHealth" -> "FHNOntology:HealthNeed" [ label = "rdfs:subClassOf" ];
+	"FHNOntology2:AgentWithSatisfiers" -> "FHNOntology2:EntityWithSatisfiers" [ label = "rdfs:subClassOf" ];
+	"FHNOntology2:PartSub" -> "FHNOntology:Participation" [ label = "rdfs:subClassOf" ];
+	"FHNOntology2:NeedsWithoutSatisfiers" -> "FHNOntology2:EntityWithoutSatisfiers" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:Protection" -> "FHNOntology:Fundamental_Need" [ label = "rdfs:subClassOf" ];
+	"FHNOntology2:IdlenessSub" -> "FHNOntology:Idleness" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:ProtectOneself" -> "FHNOntology:Protection" [ label = "rdfs:subClassOf" ];
+	"FHNOntology2:IdenSub" -> "FHNOntology:Identity" [ label = "rdfs:subClassOf" ];
+	"FHNOntology2:AffSub" -> "FHNOntology:Affection" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:SynergesticSingularSatisfier" -> "FHNOntology:Satisfier" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:OutdoorActivity" -> "FHNOntology:Exercise" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:Freedom" -> "FHNOntology:Fundamental_Need" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:HealthNeed" -> "FHNOntology:Subsistence" [ label = "rdfs:subClassOf" ];
+	"FHNOntology2:CreaSub" -> "FHNOntology:Creation" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:RigorousExercise" -> "-af26463:161d7eeafdf:-7fc1" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:ExtremelyHealthyFood" -> "-af26463:161d7eeafdf:-7fdf" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:Having" -> "-af26463:161d7eeafdf:-7fd5" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:Idleness" -> "FHNOntology:Fundamental_Need" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:ProtectBelonging" -> "FHNOntology:Protection" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:Sunlight" -> "FHNOntology:SynergesticSingularSatisfier" [ label = "rdfs:subClassOf" ];
+	"FHNOntology:HealthyFood" -> "-af26463:161d7eeafdf:-7fd1" [ label = "rdfs:subClassOf" ];
+
+}

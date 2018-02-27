@@ -1,0 +1,489 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/heo#"
+     xml:base="http://purl.org/heo"
+     xmlns:heo="http://purl.org/heo#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.org/heo">
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version 0.2</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl -->
+
+
+    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg -->
+
+
+    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl -->
+
+
+    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg -->
+
+
+    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg -->
+
+
+    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+    
+
+
+    <!-- http://purl.org/heo#expressedBy -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/heo#expressedBy">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicates that the reference points to observable behavior expressing the emotion.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">expressed by</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.org/heo#Emotion"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/heo#expressedThrough -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/heo#expressedThrough">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The modality, or list of modalities, through which the emotion is expressed. An attribute of type xsd:NMTOKENS which contains a space delimited set of values from an open set of values including: {gaze, face, head, torso, gesture, leg, voice, text, locomotion, posture, physiology, ...}.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">expressed through</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.org/heo#Emotion"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/heo#targetedAt -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/heo#targetedAt">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicates that the reference points to an object towards which an emotion-related action, or action tendency, is directed.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">targeted at</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.org/heo#Emotion"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/heo#triggeredBy -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/heo#triggeredBy">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicates that the reference points to an emotion-eliciting event that caused an emotion and/or related appraisals</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">triggered by</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.org/heo#Emotion"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/heo#intensity -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/heo#intensity">
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minExclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</xsd:maxExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/heo#ActionTendency -->
+
+
+    <owl:Class rdf:about="http://purl.org/heo#ActionTendency">
+        <owl:disjointWith rdf:resource="http://purl.org/heo#Appraisal_Model"/>
+        <ace_lexicon:CN_pl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ActionTendencies</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ActionTendency</ace_lexicon:CN_sg>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emotions have a strong influence on the motivational state of a subject. Emotion theory associates emotions to a small set of so-called action tendencies, e.g. avoidance (relates to fear), rejecting (disgust) etc. Action tendencies can be viewed as a link between the outcome of an appraisal process and actual actions.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Action Tendency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/heo#Agonistic -->
+
+
+    <owl:Class rdf:about="http://purl.org/heo#Agonistic">
+        <rdfs:subClassOf rdf:resource="http://purl.org/heo#Frijda_Action_Tendency"/>
+        <ace_lexicon:CN_pl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agonistics</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agonistic</ace_lexicon:CN_sg>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agonistic (FrijdaActionTendency ) [aimed at removal of obstruction and regaining control, related to anger]</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agonistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/heo#Appraisal_Model -->
+
+
+    <owl:Class rdf:about="http://purl.org/heo#Appraisal_Model">
+        <ace_lexicon:CN_pl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Appraisals</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Appraisal</ace_lexicon:CN_sg>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The term &quot;appraisal&quot; is used in the scientific literature to describe the evaluation process leading to an emotional response. Triggered by an &quot;emotion-eliciting event&quot;, an individual carries out an automatic, subjective assessment of the event, in order to determine the relevance of the event to the individual. This assessment is carried out along a number of &quot;appraisal dimensions&quot; such as the novelty, pleasantness or goal conduciveness of the event.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Appraisal_Model - Componential  Model-</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/heo#Approach -->
+
+
+    <owl:Class rdf:about="http://purl.org/heo#Approach">
+        <rdfs:subClassOf rdf:resource="http://purl.org/heo#Frijda_Action_Tendency"/>
+        <ace_lexicon:CN_pl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Approaches</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Approach</ace_lexicon:CN_sg>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Approach (FrijdaActionTendency ) [aimed towards access and consummatory activity, related to desire]</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Approach</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/heo#Attending -->
+
+
+    <owl:Class rdf:about="http://purl.org/heo#Attending">
+        <rdfs:subClassOf rdf:resource="http://purl.org/heo#Frijda_Action_Tendency"/>
+        <ace_lexicon:CN_pl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attendings</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attending</ace_lexicon:CN_sg>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attending (FrijdaActionTendency ) [aimed at identification, related to interest]</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attending</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/heo#Avoidance -->
+
+
+    <owl:Class rdf:about="http://purl.org/heo#Avoidance">
+        <rdfs:subClassOf rdf:resource="http://purl.org/heo#Frijda_Action_Tendency"/>
+        <ace_lexicon:CN_pl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avoidances</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avoidance</ace_lexicon:CN_sg>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avoidance (FrijdaActionTendency ) [aimed towards own inaccessibility and protection, related to fear]</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avoidance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/heo#Being-with -->
+
+
+    <owl:Class rdf:about="http://purl.org/heo#Being-with">
+        <rdfs:subClassOf rdf:resource="http://purl.org/heo#Frijda_Action_Tendency"/>
+        <ace_lexicon:CN_pl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Being-withs</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Being-with</ace_lexicon:CN_sg>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Being with (FrijdaActionTendency ) [aimed at contact and interaction, related to enjoyment]</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Being with</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/heo#Dominating -->
+
+
+    <owl:Class rdf:about="http://purl.org/heo#Dominating">
+        <rdfs:subClassOf rdf:resource="http://purl.org/heo#Frijda_Action_Tendency"/>
+        <ace_lexicon:CN_pl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dominatings</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dominating</ace_lexicon:CN_sg>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dominating (FrijdaActionTendency ) [aimed at retained control, related to arrogance]</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dominating</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/heo#Frijda_Action_Tendency -->
+
+
+    <owl:Class rdf:about="http://purl.org/heo#Frijda_Action_Tendency">
+        <rdfs:subClassOf rdf:resource="http://purl.org/heo#ActionTendency"/>
+        <ace_lexicon:CN_pl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FrijdaActionTendencies</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FrijdaActionTendency</ace_lexicon:CN_sg>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An action tendency defined by Nico Frijda, who also coined the term &apos;action tendency&apos;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/heo#Interrupting -->
+
+
+    <owl:Class rdf:about="http://purl.org/heo#Interrupting">
+        <rdfs:subClassOf rdf:resource="http://purl.org/heo#Frijda_Action_Tendency"/>
+        <ace_lexicon:CN_pl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interruptings</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interrupting</ace_lexicon:CN_sg>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interrupting (FrijdaActionTendency ) [aimed at reorientation, related to shock and surprise]</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interrupting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/heo#Nonattending -->
+
+
+    <owl:Class rdf:about="http://purl.org/heo#Nonattending">
+        <rdfs:subClassOf rdf:resource="http://purl.org/heo#Frijda_Action_Tendency"/>
+        <ace_lexicon:CN_pl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nonattendings</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nonattending</ace_lexicon:CN_sg>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nonattending (FrijdaActionTendency ) [aimed at selecting, related to indifference]</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nonattending</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/heo#OCCAppraisalAppealingness -->
+
+
+    <owl:Class rdf:about="http://purl.org/heo#OCCAppraisalAppealingness">
+        <rdfs:subClassOf rdf:resource="http://purl.org/heo#OCC_Appraisal"/>
+        <ace_lexicon:CN_pl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCAppraisalAppealingnesses</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCAppraisalAppealingness</ace_lexicon:CN_sg>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Appealingness (OCCAppraisal)  [relevant for attraction emotions. (liking/disliking)]</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Appealingness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/heo#OCCAppraisalDeservingness -->
+
+
+    <owl:Class rdf:about="http://purl.org/heo#OCCAppraisalDeservingness">
+        <rdfs:subClassOf rdf:resource="http://purl.org/heo#OCC_Appraisal"/>
+        <ace_lexicon:CN_pl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCAppraisalDeservingnesses</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCAppraisalDeservingness</ace_lexicon:CN_sg>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deservingness (OCCAppraisal)  [related to fortunes of others. Whether the other “deserves” the event.]</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deservingness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/heo#OCCAppraisalDesirability -->
+
+
+    <owl:Class rdf:about="http://purl.org/heo#OCCAppraisalDesirability">
+        <rdfs:subClassOf rdf:resource="http://purl.org/heo#OCC_Appraisal"/>
+        <ace_lexicon:CN_pl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCAppraisalDesirabilities</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCAppraisalDesirability</ace_lexicon:CN_sg>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Desirability (OCCAppraisal)  [relevant for event based emotions. (pleased/displeased)]</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Desirability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/heo#OCCAppraisalDesirability-for-other -->
+
+
+    <owl:Class rdf:about="http://purl.org/heo#OCCAppraisalDesirability-for-other">
+        <rdfs:subClassOf rdf:resource="http://purl.org/heo#OCC_Appraisal"/>
+        <ace_lexicon:CN_pl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCAppraisalDesirability-for-others</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCAppraisalDesirability-for-other</ace_lexicon:CN_sg>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Desirability-for-other (OCCAppraisal)  [related to fortunes of others. Whether the event is desirable for the other.]</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Desirability for other</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/heo#OCCAppraisalEffort -->
+
+
+    <owl:Class rdf:about="http://purl.org/heo#OCCAppraisalEffort">
+        <rdfs:subClassOf rdf:resource="http://purl.org/heo#OCC_Appraisal"/>
+        <ace_lexicon:CN_pl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCAppraisalEfforts</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCAppraisalEffort</ace_lexicon:CN_sg>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Effort (OCCAppraisal)  [relevant for prospect emotions. How much effort the individual invested in the outcome.]</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Effort</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/heo#OCCAppraisalExpectation-of-deviation -->
+
+
+    <owl:Class rdf:about="http://purl.org/heo#OCCAppraisalExpectation-of-deviation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/heo#OCC_Appraisal"/>
+        <ace_lexicon:CN_pl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCAppraisalExpectation-of-deviations</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCAppraisalExpectation-of-deviation</ace_lexicon:CN_sg>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expectation-of-deviation (OCCAppraisal)  [relevant for attribution emotions. Distinguishes whether the other is expected to act in the manner deserving of admiration or reproach. These distinguish b between: pride, shame, admiration, reproach.]</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expectation of deviation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/heo#OCCAppraisalFamiliarity -->
+
+
+    <owl:Class rdf:about="http://purl.org/heo#OCCAppraisalFamiliarity">
+        <rdfs:subClassOf rdf:resource="http://purl.org/heo#OCC_Appraisal"/>
+        <ace_lexicon:CN_pl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCAppraisalFamiliarities</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCAppraisalFamiliarity</ace_lexicon:CN_sg>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Familiarity (OCCAppraisal)  [relevant for attraction emotions. (love/hate)]</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Familiarity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/heo#OCCAppraisalLikelihood -->
+
+
+    <owl:Class rdf:about="http://purl.org/heo#OCCAppraisalLikelihood">
+        <rdfs:subClassOf rdf:resource="http://purl.org/heo#OCC_Appraisal"/>
+        <ace_lexicon:CN_pl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCAppraisalLikelihoods</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCAppraisalLikelihood</ace_lexicon:CN_sg>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Likelihood (OCCAppraisal)  [relevant for prospect emotions. (hope/fear)]</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Likelihood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/heo#OCCAppraisalLiking -->
+
+
+    <owl:Class rdf:about="http://purl.org/heo#OCCAppraisalLiking">
+        <rdfs:subClassOf rdf:resource="http://purl.org/heo#OCC_Appraisal"/>
+        <ace_lexicon:CN_pl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCAppraisalLikings</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCAppraisalLiking</ace_lexicon:CN_sg>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liking (OCCAppraisal)  [related to fortunes of others. Whether the other is liked or not. These distinguish between: happy-for, pity, gloating (schadenfreude), and resentment.]</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/heo#OCCAppraisalPraiseworthiness -->
+
+
+    <owl:Class rdf:about="http://purl.org/heo#OCCAppraisalPraiseworthiness">
+        <rdfs:subClassOf rdf:resource="http://purl.org/heo#OCC_Appraisal"/>
+        <ace_lexicon:CN_pl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCAppraisalPraiseworthinesses</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCAppraisalPraiseworthiness</ace_lexicon:CN_sg>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Praiseworthiness (OCCAppraisal)  [relevant for attribution emotions. (approving/disapproving)]</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Praiseworthiness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/heo#OCCAppraisalRealization -->
+
+
+    <owl:Class rdf:about="http://purl.org/heo#OCCAppraisalRealization">
+        <rdfs:subClassOf rdf:resource="http://purl.org/heo#OCC_Appraisal"/>
+        <ace_lexicon:CN_pl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCAppraisalRealizations</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCAppraisalRealization</ace_lexicon:CN_sg>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Realization (OCCAppraisal)  [relevant for prospect emotions. The actual resulting outcome. These distinguish between: relief, disappointment, satisfaction, and fears-confirmed.]</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Realization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/heo#OCCAppraisalStrength-of-identification -->
+
+
+    <owl:Class rdf:about="http://purl.org/heo#OCCAppraisalStrength-of-identification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/heo#OCC_Appraisal"/>
+        <ace_lexicon:CN_pl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCAppraisalStrength-of-identifications</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCAppraisalStrength-of-identification</ace_lexicon:CN_sg>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Strength-of-identification (OCCAppraisal)  [relevant for attribution emotions. The stronger one identifies with the other, that distinguishes between whether pride or admiration is felt.]</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Strength of identification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/heo#OCC_Appraisal -->
+
+
+    <owl:Class rdf:about="http://purl.org/heo#OCC_Appraisal">
+        <rdfs:subClassOf rdf:resource="http://purl.org/heo#Appraisal_Model"/>
+        <ace_lexicon:CN_sg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCAppraisal</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/heo#Rejecting -->
+
+
+    <owl:Class rdf:about="http://purl.org/heo#Rejecting">
+        <rdfs:subClassOf rdf:resource="http://purl.org/heo#Frijda_Action_Tendency"/>
+        <ace_lexicon:CN_pl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rejectings</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rejecting</ace_lexicon:CN_sg>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rejecting (FrijdaActionTendency ) [aimed at removal of object, related to disgust]</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rejecting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/heo#Submitting -->
+
+
+    <owl:Class rdf:about="http://purl.org/heo#Submitting">
+        <rdfs:subClassOf rdf:resource="http://purl.org/heo#Frijda_Action_Tendency"/>
+        <ace_lexicon:CN_pl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Submittings</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Submitting</ace_lexicon:CN_sg>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Submitting (FrijdaActionTendency ) [aimed at deflecting pressure, related to humility and resignation]</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Submitting</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+
