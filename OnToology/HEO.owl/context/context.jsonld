@@ -1,0 +1,121 @@
+{
+  "@context" : {
+    "TV_pl" : {
+      "@id" : "http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"
+    },
+    "Interrupting" : {
+      "@id" : "http://purl.org/heo#Interrupting"
+    },
+    "intensity" : {
+      "@id" : "http://purl.org/heo#intensity"
+    },
+    "Nonattending" : {
+      "@id" : "http://purl.org/heo#Nonattending"
+    },
+    "OCCAppraisalExpectation-of-deviation" : {
+      "@id" : "http://purl.org/heo#OCCAppraisalExpectation-of-deviation"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Frijda_Action_Tendency" : {
+      "@id" : "http://purl.org/heo#Frijda_Action_Tendency"
+    },
+    "Attending" : {
+      "@id" : "http://purl.org/heo#Attending"
+    },
+    "Rejecting" : {
+      "@id" : "http://purl.org/heo#Rejecting"
+    },
+    "triggeredBy" : {
+      "@id" : "http://purl.org/heo#triggeredBy"
+    },
+    "Dominating" : {
+      "@id" : "http://purl.org/heo#Dominating"
+    },
+    "OCCAppraisalFamiliarity" : {
+      "@id" : "http://purl.org/heo#OCCAppraisalFamiliarity"
+    },
+    "OCCAppraisalAppealingness" : {
+      "@id" : "http://purl.org/heo#OCCAppraisalAppealingness"
+    },
+    "Agonistic" : {
+      "@id" : "http://purl.org/heo#Agonistic"
+    },
+    "OCCAppraisalRealization" : {
+      "@id" : "http://purl.org/heo#OCCAppraisalRealization"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "OCCAppraisalStrength-of-identification" : {
+      "@id" : "http://purl.org/heo#OCCAppraisalStrength-of-identification"
+    },
+    "OCCAppraisalDesirability" : {
+      "@id" : "http://purl.org/heo#OCCAppraisalDesirability"
+    },
+    "Being-with" : {
+      "@id" : "http://purl.org/heo#Being-with"
+    },
+    "expressedBy" : {
+      "@id" : "http://purl.org/heo#expressedBy"
+    },
+    "Approach" : {
+      "@id" : "http://purl.org/heo#Approach"
+    },
+    "targetedAt" : {
+      "@id" : "http://purl.org/heo#targetedAt"
+    },
+    "OCCAppraisalLiking" : {
+      "@id" : "http://purl.org/heo#OCCAppraisalLiking"
+    },
+    "TV_vbg" : {
+      "@id" : "http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"
+    },
+    "ActionTendency" : {
+      "@id" : "http://purl.org/heo#ActionTendency"
+    },
+    "Submitting" : {
+      "@id" : "http://purl.org/heo#Submitting"
+    },
+    "Avoidance" : {
+      "@id" : "http://purl.org/heo#Avoidance"
+    },
+    "OCCAppraisalLikelihood" : {
+      "@id" : "http://purl.org/heo#OCCAppraisalLikelihood"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "OCCAppraisalDesirability-for-other" : {
+      "@id" : "http://purl.org/heo#OCCAppraisalDesirability-for-other"
+    },
+    "TV_sg" : {
+      "@id" : "http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"
+    },
+    "OCC_Appraisal" : {
+      "@id" : "http://purl.org/heo#OCC_Appraisal"
+    },
+    "CN_pl" : {
+      "@id" : "http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"
+    },
+    "CN_sg" : {
+      "@id" : "http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"
+    },
+    "OCCAppraisalEffort" : {
+      "@id" : "http://purl.org/heo#OCCAppraisalEffort"
+    },
+    "expressedThrough" : {
+      "@id" : "http://purl.org/heo#expressedThrough"
+    },
+    "OCCAppraisalDeservingness" : {
+      "@id" : "http://purl.org/heo#OCCAppraisalDeservingness"
+    },
+    "Appraisal_Model" : {
+      "@id" : "http://purl.org/heo#Appraisal_Model"
+    },
+    "OCCAppraisalPraiseworthiness" : {
+      "@id" : "http://purl.org/heo#OCCAppraisalPraiseworthiness"
+    }
+  }
+}
